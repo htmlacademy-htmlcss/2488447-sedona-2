@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дарья Дериглазова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2488447).
-* Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena)
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
