@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип сайта Седона" />
       </a>
@@ -39,8 +39,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
+    <main class="main-inner" data-test="main">
+      <header class="inner-header" data-test="header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </header>
-      <section class="filter">
+      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-group">
@@ -113,7 +113,7 @@
           <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
         <select class="celect-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -218,7 +218,7 @@
           </li>
         </ul>
       </section>
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-subtitle">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -230,7 +230,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="contacts-list">
         <li class="contacts-item">
           <a class="contacts-logo" href="https://vk.com/htmlacademy">

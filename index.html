@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип сайта Седона">
       </a>
@@ -43,14 +43,14 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="main-index">
+    <main class="main-index" data-test="main" >
+      <section class="hero">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img class="main-image" src="#" alt="Добро пожаловать">
-        <img class="main-image" src="#" alt="В великолепную">
-        <img class="main-image" src="#" alt="Седона. Потому что это Гранд Каньён!">
+        <img class="hero-image" src="#" alt="Добро пожаловать">
+        <img class="hero-image" src="#" alt="В великолепную">
+        <img class="hero-image" src="#" alt="Седона. Потому что это Гранд Каньён!">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -79,7 +79,7 @@
           </li>
         </ul>
       </section>
-      <section class="occasion">
+      <section class="occasion" data-test="advantages">
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
         <ul class="occasion-list">
@@ -97,13 +97,13 @@
           </li>
         </ul>
       </section>
-      <section class="offer">
+      <section class="offer" data-test="search">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p class="title">Заинтересовались?</p>
         <p class="subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="offer-link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -113,7 +113,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="contacts-list">
         <li class="contacts-item">
           <a class="contacts-logo" href="https://vk.com/htmlacademy">
