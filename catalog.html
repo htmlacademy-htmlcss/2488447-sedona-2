@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="page-header" data-test="header">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="#" alt="Логотип сайта Седона" />
+      <a class="logo" href="index.html" aria-current="page">
+        <img class="logo-image" src="#" alt="Логотип сайта Седона" />
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -21,20 +21,20 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user-link search-link" href="#">
               <span class="visually-hidden"> Поиск </span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden"> Избранное </span>
-              <span class="number-elected">12</span>
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden">Количество отелей в избранном</span>
+              <span class="number-likes">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="catalog.html">Хочу сюда!</a>
+            <a class="button secondary-button" href="catalog.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -218,39 +218,42 @@
           </li>
         </ul>
       </section>
-      <section class="newsletter" data-test="subscribe">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-subtitle">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+      <section class="subscribe" data-test="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-id">Укажите ваш email</label>
           <input type="text" placeholder="Ваш e-mail" name="email" id="email-id">
-          <input type="submit" value="Подписаться">
+          <button class="primary-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer" data-test="footer">
-      <ul class="contacts-list">
-        <li class="contacts-item">
-          <a class="contacts-logo" href="https://vk.com/htmlacademy">
-            <img class="contacts-icon" src="#" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contacts-logo" href="https://t.me/htmlacademy">
-            <img class="contacts-icon" src="#" alt="Телеграм">
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contacts-logo" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="contacts-icon" src="#" alt="Ютуб">
-          </a>
-        </li>
-      </ul>
-      <a class="contacts-telephone" href="tel:+78121212">+7 (812) 812-12-12</a>
+      <section class="social">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a class="contacts-logo" href="https://vk.com/htmlacademy">
+              <img class="contacts-icon" src="#" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a class="contacts-logo" href="https://t.me/htmlacademy">
+              <img class="contacts-icon" src="#" alt="Телеграм">
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a class="contacts-logo" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="contacts-icon" src="#" alt="Ютуб">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="contacts-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
       <a class="academy-logo" href="https://htmlacademy.ru/">
-        <img class="academy-icon-logo" src="#" alt="HTML Academy">
+        <img class="academy-icon-logo" src="#" alt="Сделано в HTML Academy">
       </a>
     </footer>
   </body>
