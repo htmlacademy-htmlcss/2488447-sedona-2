@@ -3,34 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header" data-test="header">
+    <header class="page-header">
       <a class="logo" href="index.html" aria-current="page">
-        <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип сайта Седона" />
+        <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link search-link" href="#">
-              <span class="visually-hidden"> Поиск </span>
+              <span class="visually-hidden">
+                Поиск
+              </span>
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Количество отелей в избранном</span>
-              <span class="number-likes">12</span>
+            <span class="number-likes">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
@@ -39,7 +42,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner" data-test="main">
+    <main class="main-inner">
+      <section class="filter">
         <h1 class="catalog-inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -51,7 +55,6 @@
             <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-group">
@@ -78,7 +81,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group">
-            <legend class="filter-title">Тип жилья:</legend>
+            <legend class="filter-title">Тип Жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="control">
@@ -88,7 +91,7 @@
               </li>
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-housing" alue="motel">
+                  <input class="control-input" type="radio" name="type-housing" value="motel">
                   Мотель
                 </label>
               </li>
@@ -108,26 +111,26 @@
             <input type="number" id="price-max" name="price-max" value="9000" placeholder="9000">
           </fieldset>
           <div class="catalog-form-button">
-            <button class="button-apply" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+            <button class="button primary-button" type="submit">Применить</button>
+            <button class="button button-reset" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
-      <section class="catalog" data-test="catalog">
-        <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+      <section class="catalog">
+        <h2 class="title">Найдено гостиниц: <span>38</span></h2>
         <select class="celect-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
         <div class="catalog-format">
-          <a class="button button-active" href="#">
+          <a class="button-format button-format-active" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-format" href="#">
             <span class="visually-hidden">Показать по одной карточки</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-format" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
@@ -141,8 +144,8 @@
             </a>
             <p class="catalog-card-name">Гостиница</p>
             <p class="catalog-card-price">От 4000 ₽</p>
-            <a class="catalog-card-button" href="#">Подробнее</a>
-            <button class="like-card" type="button">В избранное</button>
+            <a class="button secondary-button" href="#">Подробнее</a>
+            <button class="button primary-button" type="button">В избранное</button>
             <p class="star-four stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
@@ -157,8 +160,8 @@
             </a>
             <p class="catalog-card-name">Гостиница</p>
             <p class="catalog-card-price">От 5000 ₽</p>
-            <a class="catalog-card-button" href="#">Подробнее</a>
-            <button class="like-card like-card-in-favorites" type="button">В избранном</button>
+            <a class="button secondary-button" href="#">Подробнее</a>
+            <button class="button like-card-in-favorites" type="button">В избранном</button>
             <p class="star-four stars">
               <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
@@ -173,8 +176,8 @@
             </a>
             <p class="catalog-card-name">Гостиница</p>
             <p class="catalog-card-price">От 2500 ₽</p>
-            <a class="catalog-card-button" href="#">Подробнее</a>
-            <button class="like-card" type="button">В избранное</button>
+            <a class="button secondary-button" href="#">Подробнее</a>
+            <button class="button primary-button" type="button">В избранное</button>
             <p class="star-three stars">
               <span class="visually-hidden">Гостиница 3 звезды</span>
             </p>
@@ -189,8 +192,8 @@
             </a>
             <p class="catalog-card-name">Гостиница</p>
             <p class="catalog-card-price">От 1500 ₽</p>
-            <a class="catalog-card-button" href="#">Подробнее</a>
-            <button class="like-card" type="button">В избранное</button>
+            <a class="button secondary-button" href="#">Подробнее</a>
+            <button class="button primary-button" type="button">В избранное</button>
             <p class="star-two stars">
               <span class="visually-hidden">Гостиница 2 звезды</span>
             </p>
@@ -218,17 +221,17 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe" data-test="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h2 class="title">Подпишитесь на рассылку</h2>
+        <p class="subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-id">Укажите ваш email</label>
-          <input type="text" placeholder="Ваш e-mail" name="email" id="email-id">
-          <button class="primary-button" type="submit">Подписаться</button>
+          <input class="form-e-mail" type="text" placeholder="Ваш e-mail" name="email" id="email-id">
+          <button class="button-big primary-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer" data-test="footer">
+    <footer class="page-footer">
       <section class="social">
         <h2 class="value">Социальные сети</h2>
         <ul class="contacts-list">

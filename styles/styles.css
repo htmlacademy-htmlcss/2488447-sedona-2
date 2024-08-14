@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.page-header {
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.number-likes {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.secondary-button {
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.primary-button {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.welcome {
+  background-image: url(../images/welcome-background.jpg);
+  background-size: 100% auto cover;
+  background-repeat: no-repeat;
+  background-color: #b6b6b6;
+}
+
+.advantages {
+  background-color: #FFFFFF;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subject {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  text-align: center;
+}
+
+.advantages-subject-light {
+  color: #FFFFFF;
+}
+
+.advantages-text-light {
+  color: #FFFFFF;
+}
+
+.advantages-item-dark {
+  background-color: #82B3D3;
+}
+
+.advantages-item-light {
+  background-color: #F0F6FA;
+
+}
+
+.advantages-item-medium {
+  background-color: #E6F0F6;
+}
+
+.services {
+  background-color: #FFFFFF;
+}
+
+.services-item-medium {
+  background-color: #E6F0F6;
+}
+
+.search {
+  background-color: #FFFFFF;
+}
+
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.subscribe {
+  background-image: url(../images/blurry-mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #b6b6b6;
+}
+
+.subscribe-title {
+  color: #FFFFFF;
+}
+
+.subscribe-subtitle {
+  color: #FFFFFF;
+}
+
+.form-e-mail {
+  line-height: 24px;
+  font-family: inherit;
+  color: #000000;
+}
+
+.page-footer {
+  background-color: #FFFFFF;
+}
+
+.contacts-telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.subscribe-catalog {
+  background-color: #FFFFFF;
+}
+
+.filter {
+  background-image: url(../images/blurry-mountain-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #b6b6b6;
+}
+
+.catalog-inner-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.control {
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.filter-price {
+  line-height: 24px;
+  color: #A9A9A9;
+  text-align: right;
+}
+
+.button-reset {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.catalog {
+  background-color: #FFFFFF;
+}
+
+.catalog .title {
+  text-align: left;
+}
+
+.celect-control {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.catalog-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.like-card-in-favorites {
+  color: #FFFFFF;
+  background-color: #7DB54F;
+}
+
+.rating-card {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
