@@ -16,10 +16,9 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
-  font-style: normal;
   color: #333333;
   background-color: #F2F2F2;
 }
@@ -49,6 +48,7 @@ body {
   line-height: 10px;
   font-weight: 400;
   color: #FFFFFF;
+  background-color: #7DB54F;
 }
 
 .button {
@@ -73,9 +73,9 @@ body {
 
 .welcome {
   background-image: url(../images/welcome-background.jpg);
-  background-size: 100% auto cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #b6b6b6;
+  background-color: #D4E5EF;
 }
 
 .advantages {
@@ -92,8 +92,6 @@ body {
 }
 
 .subtitle {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
 }
 
@@ -107,6 +105,8 @@ body {
 }
 
 .text {
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 
@@ -157,7 +157,7 @@ body {
   background-image: url(../images/blurry-mountains.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #b6b6b6;
+  background-color: #D4E5EF;
 }
 
 .subscribe-title {
@@ -169,6 +169,7 @@ body {
 }
 
 .form-e-mail {
+  font-size: 18px;
   line-height: 24px;
   font-family: inherit;
   color: #000000;
@@ -194,19 +195,19 @@ body {
   background-image: url(../images/blurry-mountain-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #b6b6b6;
+  background-color: #D4E5EF;
+  color: #FFFFFF;
 }
 
 .catalog-inner-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
-  color: #FFFFFF;
+  line-height: 21px;
   text-decoration: none;
 }
 
@@ -214,18 +215,26 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #FFFFFF;
 }
 
 .control {
+  font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
 }
 
 .filter-price {
+  font-size: 18px;
   line-height: 24px;
   color: #A9A9A9;
   text-align: right;
+}
+
+.fixing-price {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000000;
 }
 
 .button-reset {
@@ -241,12 +250,11 @@ body {
   text-align: left;
 }
 
-.celect-control {
+.select-control {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  font-style: normal;
   color: #333333;
   background-color: #FFFFFF;
 }
@@ -257,6 +265,16 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+}
+
+.catalog-card-name {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-card-price {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .like-card-in-favorites {
@@ -284,4 +302,9 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.pagination-text {
+  color: #000000;
+  text-align: center;
 }
