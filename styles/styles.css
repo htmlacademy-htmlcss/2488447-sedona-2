@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -25,6 +33,31 @@ body {
 
 .page-header {
   background-color: #FFFFFF;
+}
+
+.logo-image {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.navigation-list {
+  width: 464px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.navigation-user {
+  width: 312px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -71,11 +104,25 @@ body {
   background-color: #82B3D3;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome {
   background-image: url(../images/welcome-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #D4E5EF;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -93,6 +140,12 @@ body {
 
 .subtitle {
   text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+
 }
 
 .subject {
@@ -135,12 +188,24 @@ body {
   background-color: #FFFFFF;
 }
 
-.services-item-medium {
+.services-item:nth-child(odd) {
   background-color: #E6F0F6;
 }
 
 .search {
   background-color: #FFFFFF;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .button-big {
@@ -179,12 +244,69 @@ body {
   background-color: #FFFFFF;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts-list {
+  width: 142px;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts {
+  width: 720px;
+  padding: 0;
+  margin: 0;
+}
+
+.developer-logo {
+  width: 115px;
+  margin: 0;
+  padding: 0;
+}
+
 .contacts-telephone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: #000000;
+}
+
+.filter-form {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-infrastructure {
+  width: 151px;
+  margin-right: 70px;
+}
+
+.filter-housing {
+  width: 151px;
+  margin-right: 140px;
+}
+
+.filter-group-price {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.catalog-form-button {
+  width: 191px;
 }
 
 .subscribe-catalog {
@@ -246,6 +368,19 @@ body {
   background-color: #FFFFFF;
 }
 
+.catalog-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  width: 338px;
+  margin-right: auto;
+}
+
 .catalog .title {
   text-align: left;
 }
@@ -257,6 +392,23 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
+  width: 292px;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.catalog-format {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+.catalog-list {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .catalog-card-link {
@@ -287,6 +439,22 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+.pagination-list {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.pagination-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  margin-right: 8px;
+
 }
 
 .pagination-link {
