@@ -141,6 +141,14 @@ body {
   border-radius: 10px;
 }
 
+.heart-link:has(.number-likes:hover) {
+  opacity: 0.6;
+}
+
+.heart-link:has(.number-likes:hover) {
+  opacity: 0.3;
+}
+
 .search-link::before {
   content: "";
   display: inline-block;
@@ -383,7 +391,7 @@ body {
   flex-direction: column;
   width: 400px;
   height: 100%;
-  padding: 112px 85px;
+  padding: 112px 80px;
   box-sizing: border-box;
 }
 
@@ -743,6 +751,7 @@ body {
   right: 52px;
   display: flex;
   top: 64px;
+  cursor: pointer;
 }
 
 .modal-close-button::before {
@@ -770,15 +779,6 @@ body {
 }
 
 .modal-close-button:active:before {
-  opacity: 0.3;
-}
-
-.quantity-button:hover,
-.quantity-button:focus {
-  opacity: 1;
-}
-
-.quantity-button:active {
   opacity: 0.3;
 }
 
@@ -860,6 +860,12 @@ body {
   position: relative;
 }
 
+.quantity-button {
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
 .quantity-button-minus {
   position: absolute;
   width: 20px;
@@ -869,8 +875,6 @@ body {
   background-repeat: no-repeat;
   top: 14px;
   left: 10px;
-  border: none;
-  opacity: 0.3;
 }
 
 .quantity-input {
@@ -886,6 +890,7 @@ body {
   line-height: 20px;
   border-radius: 4px;
   cursor: pointer;
+  appearance: textfield;
 }
 
 .quantity-input::-webkit-outer-spin-button,
@@ -899,10 +904,21 @@ body {
   width: 20px;
   height: 20px;
   background-image: url(../images/plus.svg);
+  background-color: #F2F2F2;
   background-repeat: no-repeat;
   top: 14px;
   right: 10px;
-  border: none;
+}
+
+.quantity-button:hover {
+  opacity: 1;
+}
+
+.quantity-button:focus {
+  opacity: 1;
+}
+
+.quantity-button:active {
   opacity: 0.3;
 }
 
@@ -922,6 +938,7 @@ body {
   top: 11px;
   left: 64px;
   display: flex;
+  cursor: pointer;
 }
 
 .form-tooltip::before {
@@ -1108,7 +1125,6 @@ body {
 }
 
 .fixing-price {
-  appearance: none;
   order: -1;
   width: 100%;
   margin: 0 10px 0 0;
@@ -1120,6 +1136,7 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+  appearance: textfield;
 }
 
 .filter-price:hover{
