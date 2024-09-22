@@ -338,8 +338,12 @@ body {
   text-align: center;
 }
 
+.advantages {
+  padding-top: 69px;
+}
+
 .advantages .title {
-  margin: 69px auto 25px auto;
+  margin: 0 auto 25px auto;
   padding: 0 100px 0 100px;
 }
 
@@ -459,8 +463,12 @@ body {
   order: -1;
 }
 
+.services {
+  padding-top: 64px;
+}
+
 .services .title {
-  margin: 64px auto 20px auto;
+  margin: 0 auto 20px auto;
   padding: 0 100px 0 100px;
 }
 
