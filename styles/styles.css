@@ -154,9 +154,12 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  mask: url("../images/search.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask: url("../images/search.svg");
+          mask: url("../images/search.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #000000;
 }
 
@@ -175,9 +178,12 @@ body {
   content: "";
   width: 18px;
   height: 17px;
-  mask: url("../images/heart.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask: url("../images/heart.svg");
+          mask: url("../images/heart.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #000000;
 }
 
@@ -228,6 +234,7 @@ body {
 
 .secondary-button:disabled {
   background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .primary-button {
@@ -246,6 +253,7 @@ body {
 
 .primary-button:disabled {
   background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .like-card-in-favorites {
@@ -265,6 +273,7 @@ body {
 
 .like-card-in-favorites:disabled {
   background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .button-reset {
@@ -287,6 +296,7 @@ body {
 
 .button-reset:disabled {
   color: #FFFFFF4D;
+  pointer-events: none;
 }
 
 .navigation-user-item .button {
@@ -574,7 +584,8 @@ body {
 }
 
 .field {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
   padding: 14px 20px 14px 20px;
   font-size: 18px;
@@ -631,9 +642,12 @@ body {
   content: "";
   width: 24px;
   height: 14px;
-  mask: url("../images/vk.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask: url("../images/vk.svg");
+          mask: url("../images/vk.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #83B3D3;
 }
 
@@ -642,9 +656,12 @@ body {
   content: "";
   width: 18px;
   height: 16px;
-  mask: url("../images/telegram.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask: url("../images/telegram.svg");
+          mask: url("../images/telegram.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #83B3D3;
 }
 
@@ -653,8 +670,10 @@ body {
   content: "";
   width: 22px;
   height: 17px;
-  mask: url("../images/youtube.svg");
-  mask-repeat: no-repeat;
+  -webkit-mask: url("../images/youtube.svg");
+          mask: url("../images/youtube.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-color: #83B3D3;
 }
 
@@ -675,6 +694,8 @@ body {
 
 .contacts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 720px;
   padding: 0;
   margin: 0;
@@ -704,8 +725,10 @@ body {
   margin-top: 4px;
   width: 115px;
   height: 33px;
-  mask: url("../images/logo-academy.svg");
-  mask-repeat: no-repeat;
+  -webkit-mask: url("../images/logo-academy.svg");
+          mask: url("../images/logo-academy.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-color: #000000;
 }
 
@@ -760,10 +783,13 @@ body {
   width: 14px;
   height: 14px;
   margin: auto;
-  mask: url("../images/cross.svg");
-  mask-repeat: no-repeat;
+  -webkit-mask: url("../images/cross.svg");
+          mask: url("../images/cross.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-color: #000000;
-  mask-size: 100%;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
 }
 
 .modal-close-button:hover,
@@ -891,13 +917,15 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
   margin: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .quantity-button-plus {
@@ -921,6 +949,11 @@ body {
 
 .quantity-button:active {
   opacity: 0.3;
+}
+
+.quantity-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .group-children {
@@ -951,10 +984,13 @@ body {
   width: 2px;
   height: 12px;
   margin: auto;
-  mask: url("../images/tooltip.svg");
-  mask-repeat: no-repeat;
+  -webkit-mask: url("../images/tooltip.svg");
+          mask: url("../images/tooltip.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-color: #FFFFFF;
-  mask-size: 100%;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
 }
 
 .tooltip-text {
@@ -1144,7 +1180,8 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .filter-price:hover{
@@ -1154,7 +1191,8 @@ body {
 .fixing-price::-webkit-outer-spin-button,
 .fixing-price::-webkit-inner-spin-button {
   margin: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .filter-price:nth-child(2n) {
@@ -1241,7 +1279,8 @@ body {
   margin: 0;
   background-color: #FFFFFF;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .control-input-checkbox {
@@ -1259,10 +1298,14 @@ body {
 .control-input-checkbox::before {
   width: 13px;
   height: 11px;
-  mask: url("../images/check-mark.svg");
-  mask-repeat: no-repeat;
-  mask-size: 100%;
-  mask-position: center;
+  -webkit-mask: url("../images/check-mark.svg");
+          mask: url("../images/check-mark.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 
 .control-input-radio::before {
@@ -1318,7 +1361,8 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
@@ -1353,6 +1397,11 @@ body {
 
 .button-format:active {
   border: 2px solid #000000;
+}
+
+.button-format:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .button-format-active {
@@ -1510,8 +1559,6 @@ body {
 .pagination-link:hover,
 .pagination-link:focus{
   background-color: #68A2CA;
-  outline: 1px solid #82B3D3;
-  outline-offset: -1px;
 }
 
 .pagination-link:active {
